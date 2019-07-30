@@ -1,90 +1,183 @@
 body {
-    background-color:pink;
+    background-color:black;
     font-family: 'Montserrat', sans-serif;
 }
 
+
+/*---------------------------------------------TEXT STYLES*/
 h1 {
-    font-family: 'Barlow Condensed', sans-serif;
-}
-
-
-.alert-container {
-    
-}
-
-
-.callout-container {
-    height:100vh;
-   
-    background: url("../images/zulu.jpg") no-repeat bottom right fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    
-    position:relative;
-}
-
-.quotes-container {
-    
-}
-
-
-.services-container {
-    
-}
-
-.opaque-overlay {
-    position: absolute;
-    top:0;
-    left: 0;
-    height:100%;
-    width:100%;
-    background-color: rgba(0,0,0,0.5);
-}
-
-
-
-
-/*Blockdivider*/
-
-.block-divider {
-    width: 75px;
-    height: 5px;
-    border: none;
-    background-color:white;
-}
-
-.block-divider-short{
-     width: 35px;
-}
-
-
-/*Jumbotron*/
-
-.jumbotron {
-    background: transparent;
-}
-
-.jumbotron-header {
+    font-family: 'Montserrat', sans-serif;
+   /* font-family: 'Barlow Condensed', sans-serif;*/
     color:white;
+    text-transform:uppercase;
+    font-size: 3em;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+ /*   font-family: 'Barlow Condensed', sans-serif;*/
+    color:white;
+    text-transform:uppercase;
+    font-size: 2em;
+}
+
+.h2main {
+     font-size: 3em;
+}
+
+h3 {
+     color:white;
+}
+
+h4 {
+    color:white;
+}
+
+h5 {
+    color:white;
+}
+
+.PT {
+    font-family: 'PT Serif', serif;
+}
+
+a {
+    color:white;
+    
+}
+
+.whitefont {
+    color: white;
+}
+
+.maintitle {
+    /* margin-top:20vh;*/
+     color: white;
+     
+}
+
+.uppercase {
+ text-transform:uppercase;
+}
+
+/*-------------------------------------------------ALIGNMENT----*/
+
+.center {
+    text-align: center;
+}
+
+/*-------------------------------------------BACKGROUND COLORS---------*/
+.blackback {
+    background-color: black;
+    min-height:100vh;
+}
+
+.tpx50 {
+    padding-top: 50px;
+}
+
+
+/*-------------------------------VIDEO SETTINGG*/
+.video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh; 
+  overflow: hidden;
+}
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/*--------------------------------NAVBAR -------------*/
+.logo {
+    font-size: 5em;
+}
+
+.nav-item{
     font-weight: bold;
-    margin-bottom: 30px;
 }
 
-.jumbotron .lead {
-    margin: 25px 0;
-    color: #ecdbdb;
+.nothomelogo {
+     font-size: 1em;
+     font-weight: bold;
+}
+
+.nothomenav {
+     font-weight: normal;
 }
 
 
-.jumbotron small {
-    font-size: 60%;
-    font-style:italic;
-    color: #ecdbdb;
+
+/*---------------------------------GALLERY ----------*/
+.galleryholder {
+    padding: 50px;
 }
+
+.gallery {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-width: 33%;
+-moz-column-width: 33%;
+column-width: 33%; 
+
+}
+
+
+.gallery .pics {
+-webkit-transition: all 350ms ease;
+transition: all 350ms ease; }
+
+.gallery .animation {
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1); }
+
+@media (max-width: 450px) {
+.gallery {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+}
+}
+
+@media (max-width: 400px) {
+.btn.filter {
+padding-left: 1.1rem;
+padding-right: 1.1rem;
+}
+}
+
+
+/*-------------------------------SERVICES-----------*/
+.serviceholder {
+    margin-top:100px;
+}
+
+
+
+/*---------------------------------ABOUT ----------*/
+
+.aboutholder {
+    padding: 50px;
+}
+
+
 
