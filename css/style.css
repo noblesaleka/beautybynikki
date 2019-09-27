@@ -104,11 +104,25 @@ a {
 
 /*--------------------------------NAVBAR -------------*/
 .logo {
-    font-size: 5em;
+font-size: 5em;
+    
+}
+
+.logo:hover {
+    color:white;
+    text-decoration: none;
 }
 
 .nav-item{
     font-weight: bold;
+}
+
+.nav-link:hover  {
+    color: grey;
+}
+
+.navbar-dark {
+    background-color: black !important;
 }
 
 .nothomelogo {
