@@ -103,6 +103,26 @@ a {
 }
 
 /*--------------------------------NAVBAR -------------*/
+@media (max-width: 576px) {
+    .nav1 {
+        display: block;
+    }
+    .nav2 {
+        display: none;
+    }
+}
+
+@media (min-width: 577px) {
+    .nav1 {
+        display: none;
+    }
+    .nav2 {
+        display: block;
+    }
+    
+}
+
+
 .logo {
 font-size: 5em;
     
