@@ -110,6 +110,9 @@ a {
     .nav2 {
         display: none;
     }
+    .logo {
+        font-size: 2rem !important;
+    }
 }
 
 @media (min-width: 577px) {
@@ -121,6 +124,8 @@ a {
     }
     
 }
+
+
 
 
 .logo {
@@ -154,6 +159,27 @@ font-size: 5em;
      font-weight: normal;
 }
 
+.dropdown-toggle {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+button:focus {
+  outline: none;
+}
 
 
 /*---------------------------------GALLERY ----------*/
