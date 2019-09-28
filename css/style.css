@@ -110,8 +110,8 @@ a {
     .nav2 {
         display: none;
     }
-    .logo2 {
-        font-size: 1.5rem;
+    .logo {
+        font-size: 2px !important;
     }
 }
 
@@ -125,8 +125,46 @@ a {
     
 }
 
+.menu {
+   z-index: 2;
+   position: relative;
+}
+
+.submenu {
+    list-style-type: none;
+    position: relative;
+    transform: translateY(-110%);
+    transition: transform 1s ease;
+    z-index: -1;
+    
+    
+}
+
+.subitem {
+   transition: color .5s ease-in-out, color .5s ease-in-out;
+   opacity: 0;
+}
 
 
+.subitem:hover {
+    text-decoration: none;
+    color: grey;
+    
+}
+
+.menu:hover .submenu {
+    transform: translateY(0);
+    }
+    
+.menu:hover .subitem {
+   
+   opacity: 0.9;
+    }
+    
+    
+    
+    
+    
 
 .logo {
 font-size: 5em;
@@ -142,9 +180,16 @@ font-size: 5em;
     font-weight: bold;
 }
 
+.nav-link {
+     transition: color .5s ease-in-out, color .5s ease-in-out;
+}
+
+
 .nav-link:hover  {
     color: grey;
+    
 }
+
 
 .navbar-dark {
     background-color: black !important;
