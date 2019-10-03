@@ -86,6 +86,8 @@ a {
   height: 100vh; 
   overflow: hidden;
 }
+
+
 .video-container video {
   /* Make video to at least 100% wide and tall */
   min-width: 100%; 
@@ -189,7 +191,6 @@ font-size: 5em;
     color: grey;
     
 }
-
 
 .navbar-dark {
     background-color: black !important;
